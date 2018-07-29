@@ -1,0 +1,7 @@
+mkdir .dropbox-alt
+mkdir Dropbox_ALT
+HOME=$HOME/.dropbox-alt .dropbox-dist/dropboxd -i
+
+
+mkdir CLOUD/.dropbox-krnk
+HOME=$HOME/CLOUD/.dropbox-krnk .dropbox-dist/dropboxd -

@@ -1,0 +1,7 @@
+#HOME=$HOME/.dropbox-alt .dropbox-dist/dropboxd -i
+
+#HOME=$HOME/CLOUD/Dropbox_Pmm/Dropbox/.dropbox-alt .dropbox-dist/dropboxd -i
+
+cd CLOUD
+
+HOME=$HOME/CLOUD/.dropbox_pmm ../.dropbox-dist/dropboxd -i
