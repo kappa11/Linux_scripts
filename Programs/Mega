@@ -1,0 +1,10 @@
+
+apt-get update && apt-get install -y glib-networking fuse curl wget
+
+cd /tmp
+wget http://megatools.megous.com/builds/megatools-1.9.91-debian-wheezy-amd64.tar.gz
+sudo tar -x -f megatools-1.9.91-debian-wheezy-amd64.tar.gz -C / --no-overwrite-dir
+
+
+sudo tar xvzf megatools-1.9.91-debian-wheezy-amd64.tar.gz -C / --no-overwrite-dir
+
