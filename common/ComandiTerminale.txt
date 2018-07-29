@@ -1,0 +1,29 @@
+Comandi Terminale utili:
+
+pwd (per vedere dove sei)
+
+alias rm="rm - i"
+scp (secure copy)
+
+#Per cambiare password
+passwd
+
+
+#eliminare i file nascosti
+rm -r .[^.]*
+
+find . -name ._\* -exec rm -f {} \;
+
+
+zip cartelle
+zip -r nome.zip nome_cartella
+
+
+
+
+
+Per cercare:: ??
+
+grep -r 'file_name' path_to_folder
+
+grep -r -l "foo" /path/to/dir/*.c

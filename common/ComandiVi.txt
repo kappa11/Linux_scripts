@@ -1,0 +1,30 @@
+per uscire: ':q' 
+per uscire senza fregarti che il file è stato modificato ':q!' 
+
+uscire insert mode: tasto esc
+
+per salvare: ':w'
+per salvare con un altro nome: ':w filename2'
+
+per uscire e salvare: ':wq'='ZZ'
+
+
+In command mode:
+'k' : muove in alto
+'j' : muove in basso
+'h' : muove a sinistra
+'l' : muove a destra
+'G' : fine documento
+
+si può specificare quante volte si vuole ripetere il comando. 
+
+Insert mode! 
+'i' inserire alla posizione corrente del cursore
+'I' inserire alla riga dove si trova il cursore
+
+'a inserire testo dopo la posizione del cursore
+'A' inserire testo alla fine del  la riga dove si trova il cursore
+'o' creare una nuova riGa sotto dove si trova il cURSORE
+'O' creare una nuova riga sopra dove si trova il cursore
+
+

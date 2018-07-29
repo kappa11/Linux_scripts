@@ -1,0 +1,7 @@
+image magick
+
+convert IM*.jpg, video.gif
+
+magrify -resize 50% video.gif
+
+-nolosses

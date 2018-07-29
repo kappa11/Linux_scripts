@@ -1,0 +1,11 @@
+#Estrarre imagini pdf:
+pdfimages -j lffl.pdf lffl
+#Estrarre testo pdf:
+
+pdftotext lffl.pdf lffl.txt
+
+
+ddjvu -format=tiff file_name.djvu file_name.tiff
+
+
+tiff2pdf -j -o file_name.pdf file_name.tiff
