@@ -1,0 +1,10 @@
+sudo apt-get remove --purge openoffice*.*
+sudo apt-get remove amsn
+sudo apt-get remove brasero
+sudo apt-get remove banshee
+sudo apt-get remove thunderbird
+sudo apt-get remove gpixpod
+sudo apt-get remove f-spot
+sudo apt-get remove xsane
+sudo apt-get remove pidgin
+sudo apt-get autoclean

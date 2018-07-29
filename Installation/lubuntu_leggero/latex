@@ -1,0 +1,4 @@
+sudo apt-get install texlive-base 
+#& texlive-base-bin & preview-latex-style
+
+sudo apt-get installl texmaker
