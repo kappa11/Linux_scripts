@@ -1,0 +1,12 @@
+cd Dropbox/Android/Reading/
+
+#rm -r  ../../../../media/utente/Kindle/documents/università/MaterialeUni/
+ 
+#mkdir ../../../../media/utente/Kindle/documents/università/MaterialeUni/
+
+
+rsync -rv --include '*/' --include '*.pdf' --exclude '*'  MaterialeUni/ ../../../../../media/utente/Kindle/documents/Università/MaterialeUni
+
+rsync -rv --include '*/' --include '*.mobi' --exclude '*'  MaterialeUni/ ../../../../../media/utente/Kindle/documents/Università/MaterialeUni
+
+
