@@ -1,0 +1,8 @@
+### TO PUT IN ~/.ipython/profile_default/startup/starting.ipy
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+~                                                                               
+~                                 
+
