@@ -1,0 +1,1 @@
+ctrl + superuser (finestra windows) +d = MOSTRA SCRIVANIA
