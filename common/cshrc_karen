@@ -1,0 +1,125 @@
+#
+# Default user .cshrc file (/usr/bin/csh initialization).
+
+# Usage:  Copy this file to a user's home directory and edit it to
+# customize it to taste.  It is run by csh each time it starts up.
+
+# Set up default command search path:
+#
+# (For security, this default is a minimal set.)
+
+	umask 077
+#set path=( $path /bin /usr/bin /usr/bin/X11 /home/pommois/.bin . /usr/java/jre1.3.1/bin)
+set path=( $path /bin /usr/bin /home/kpommois/.bin . )
+
+# connection a server universitee: ssh pommois@astro1.fis.unical.it
+# vois tu pour acces avec astussftp 
+
+#completamento
+set autolist
+
+# Set up C shell environment:
+
+	if ( $?prompt ) then		# shell is interactive.
+	    set history=20		# previous commands to remember.
+	    set savehist=20		# number to save across sessions.
+	    set system=`hostname`	# name of this system.
+#	    set prompt = "$system \!: "	# command prompt.
+	    set prompt="`pwd` [\!]> "	# command prompt.
+
+
+            # Programmi slackware 11.0:
+
+           alias openoffice   openoffice.org2.2
+
+#          connection ad astro1:
+
+           alias astro1        'ssh pommois@astro1.fis.unical.it'
+
+           alias gatempg        'ssh kpommois@gatezero.mpcdf.mpg.de'
+
+	   alias gatempg_get 	'sftp kpommois@gatezero.mpcdf.mpg.de'
+	  	
+           alias draco       	'ssh kpommois@draco.mpcdf.mpg.de'
+
+           alias cobra       	'ssh kpommois@cobra.mpcdf.mpg.de'
+
+	   alias vnc_draco 		'vncviewer -via kpommois@gatezero.rzg.mpg.de draco02.mpcdf.mpg.de:3'	
+
+	   alias vnc_cobra 		'vncviewer -via kpommois@gatezero.rzg.mpg.de cobra02.mpcdf.mpg.de:2'	
+
+	   alias vnc_solaris 		'vncviewer -via kpommois@gatezero.rzg.mpg.de sxaug26:1'	
+
+	   alias vnc_tok 		'vncviewer -via kpommois@gatezero.rzg.mpg.de toki01:15'	
+
+	    # Sample alias:
+
+	    alias	h	history		
+	    alias	tt	'xterm -j -sb -tn vt100 -e telnet -8 &'
+	    alias	cd	'cd \!* ; set prompt="`pwd` [\\!]> "'
+	    alias 	xe	'emacs \!* > & /dev/null &'	
+#	    alias	gv	'ghostview \!*'
+	    alias	dir	'll |more'
+            alias       b       'gedit \!:1 &'
+#            alias       b       'emacs \!:1 &'
+#	    alias	m	more
+	    alias	m	'less'
+            alias       cd       'cd \!*; set prompt="$cwd\> "'
+	    alias	ll	'ls -l'
+            alias  bce	'bc -l /home/pommois/.bin/bclib'
+#            alias acroread '/usr/local/Acrobat5/bin/acroread'
+
+#       alias letture & ricerca in file:
+
+#            alias ftel  'grep \!* /home/pommois/doc/.numtel'
+#            alias eltel 'more /home/pommois/doc/.numtel'
+#            alias btel 'b /home/pommois/doc/.numtel'
+            alias ftel  'grep \!* /dos/numtel.tex'
+            alias eltel 'more /dos/numtel.tex'
+            alias btel 'b /dos/numtel.tex'
+            alias fbib  'grep \!* /home/pommois/texfile/biblio.tex'
+            alias elora 'more /home/pommois/doc/.orario'
+            alias bora 'b /home/pommois/doc/.orario'
+	    alias blocn 'b /home/pommois/texfile/doc/ricer/note.txt &'
+            alias bbib 'b /home/pommois/texfile/biblio.tex'
+            alias  fhlp    'grep \!* /home/pommois/texfile/doc/.hlp_txt'
+            alias  bhlp    'b /home/pommois/texfile/doc/.hlp_txt'
+            alias  elhlp   'more /home/pommois/texfile/doc/.hlp_txt'
+
+#       ricerca film
+
+            alias ffilm  'grep \!* /dos/emule/Incoming/DaScaricare.txt'
+            alias bfilm 'b /dos/emule/Incoming/DaScaricare.txt'
+            alias elfilm 'more /dos/emule/Incoming/DaScaricare.txt'
+
+            # commandi per ridure foto: 
+
+            alias  ridf   'convert -geometry 1024x768 \!:1 \!:2'
+
+            # commandi per scrivere sul disco DOS: 
+
+            alias dosa    'mount /mnt/floppy; echo dir del floppy: /mnt/floppy'
+            alias dosc    'mount /dos; echo dir del Hdisk: /dos'
+            alias musb    'mount /mnt/usb; echo dir usb: /mnt/usb'
+            alias udosa   'umount /mnt/floppy'
+            alias udosc   'umount /dos'
+            alias uusb    'umount /mnt/usb'
+#            alias musers    'mount /users; echo dir del Hdisk: /users'
+#            alias uusers   'umount /users'
+
+             # montaggi di CDrom e Masterizzatore
+
+            alias mcdrom    'mount /mnt/cdrom; echo dir del Cdrom: /mnt/cdrom'
+            alias ucdrom   'umount /mnt/cdrom'
+
+	    # More sample aliases, commented out by default:
+
+	    # alias	d	dirs
+	    # alias	pd	pushd
+	    # alias	pd2	pushd +2
+	    # alias	po	popd
+     #  commando per eseguire `ifc'
+#           source /usr/local/intel/compiler70/ia32/bin/ifcvars.csh
+	endif
+#
+############################ end .cshrc ###########################

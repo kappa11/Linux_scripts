@@ -1,0 +1,5 @@
+umlaut:
+1. shift sinisto+ alt Gr + . 
+2. lasciare 
+3. premere vocale 
+

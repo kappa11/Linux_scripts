@@ -1,1 +1,3 @@
 ctrl + superuser (finestra windows) +d = MOSTRA SCRIVANIA
+
+Shift+ stamp: screenshot selected area
